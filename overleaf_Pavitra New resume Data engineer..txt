@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+ \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+ \item\small{
+   {#1 \vspace{-2pt}}
+ }
+}
+
+\newcommand{\classesList}[4]{
+   \item\small{
+       {#1 #2 #3 #4 \vspace{-2pt}}
+ }
+}
+
+\newcommand{\resumeSubheading}[4]{
+ \vspace{-2pt}\item
+   \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+     \textbf{\large#1} & \textbf{\small #2} \\
+     \textit{\large#3} & \textit{\small #4} \\
+   \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+   \item
+   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+     \textit{\small#1} & \textit{\small #2} \\
+   \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+   \item
+   \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+     \small#1 & \textbf{\small #2}\\
+   \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+   {\Huge \scshape Pavitra S R} \\ \vspace{1pt}
+   Bangalore,Karnataka \\ \vspace{1pt}
+   \small \href{tel:+}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-6362715400} ~} \href{mailto:yournam@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{pavitrasr162001@gmail.com}} ~
+   \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{https://www.linkedin.com/in/pavitra-sr-a2071b252}}  ~
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+ \resumeSubHeadingListStart
+   \resumeSubheading
+     {KLE Independent PU College }{2017 -- 2018}
+    { Pre-University Boards \textbf{Percentage} - 72.83\textbf{}}{Bangalore,Karnataka}
+ \resumeSubHeadingListEnd
+ \resumeSubHeadingListStart
+   \resumeSubheading
+     {Acharya Institute of Technology}{2018 -- 2022}
+     {BE in Information Science and Engineering - \textbf{CGPA} - 7.8\textbf{}}{Bangalore,Karnataka}
+ \resumeSubHeadingListEnd
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+   %\resumeSubHeadingListStart
+       \begin{multicols}{4}
+           \begin{itemize}[itemsep=-2pt, parsep=5pt]
+               \item Azure Data Factory
+               \item Azure Data bricks
+           \item  DBMS
+               \item Azure Data Warehouse
+               \item Azure SQL database
+        \item Azure Synapse Analytics
+       
+               \item Azure Cosmos DB
+           \end{itemize}
+       \end{multicols}
+       \vspace*{2.0\multicolsep}
+   %\resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS }
+ \resumeSubHeadingListStart
+
+   \resumeSubheading
+     {Olympics Data Analysis \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{2023}
+     {\underline{Azure Databricks,Apache Spark,Azure Synapse Analytics}}{Bangalore, Karnataka}
+     \resumeItemListStart
+       \resumeItem{\normalsize{Conducted an extensive data analysis project on the historical performance of Athletes in the  Olympic games.Utilized data visualization and statistical analysis to uncover trends, patterns, and key insights. }}
+       \resumeItem{\normalsize{Data Collection and Cleaning: Collected data from various sources, including the official Olympics database and other sports data repositories Cleaned and preprocessed data . }}
+       \resumeItem{\normalsize{Exploratory Data Analysis (EDA): Conducted EDA to understand the distribution, trends, and relationships in the data .}}
+       \resumeItem{\normalsize{Statistical Analysis: Applied statistical methods to analyze performance trends, medal counts, and country-specific success rates over time.}}
+       \resumeItem{\normalsize{ Data Visualization: Created interactive dashboards using Tableau/Power BI to present key findings and allow for user interaction and deeper exploration of the data.}}
+       
+
+
+     \resumeItemListEnd  
+ \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+ \resumeSubHeadingListStart
+
+   \resumeSubheading
+     {Cognizant \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{2022 -- currently working}
+     {\underline{Azure Data Engineer}}{Bangalore, Karnataka}
+     \resumeItemListStart
+       \resumeItem{\normalsize{Detail oriented Data-engineer with hands on Experience in Azure data service Tools and Proven Experience in leveraging  \textbf{ Azure databricks and Azure data factory to create robust data flows and models.}}}
+       \resumeItem{\normalsize{Developed and maintained ETL processes to extract, transform, and load data from on-premises and cloud-based sources into \textbf{ Azure SQL Database. }}}
+       \resumeItem{\normalsize{Implemented data warehousing solutions \textbf{  on Azure Synapse Analytics, enhancing data accessibility and query performance..}}}
+       \resumeItem{\normalsize{Optimized data storage and retrieval by implementing  \textbf{partitioning, indexing, and caching strategies.}}}
+       \resumeItem{\normalsize{ Ensured data security and compliance by implementing  \textbf{role-based access control (RBAC), data encryption, and data masking techniques.}}}
+       \resumeItem{\normalsize{Automated data workflows and monitoring using  \textbf{Azure Logic Apps and Azure Monitor, reducing manual intervention and improving system reliability}}}
+
+
+       \resumeItem{\normalsize{Collaborated with cross-functional teams to understand business requirements and deliver data solutions that support data-driven decision-making.\textbf{ }}}
+
+
+     \resumeItemListEnd  
+ \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{AZ-900 Azure Fundamentals- Microsoft}} \hspace{1.6cm}
+$\sbullet[.75] \hspace{0.1cm}$ {\href{certificateLink.com}{DP-900 Azure DataFundamentals-Microsoft}} \hspace{2.59cm}
+$\sbullet[.75] \hspace{0.2cm}${\href{certificateLink.com} {DP-203 Azure Dataengineer Associate - Microsoft}}\\
+\end{document}
